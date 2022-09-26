@@ -38,12 +38,24 @@ export default function Playlists() {
 }
 
 const Container = styled.div`
+  height: 100%;
+  overflow: hidden;
   ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
+    height: 52vh;
+    max-height: 100%;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 0.7rem;
+      &-thumb {
+        background-color: #b3b3b3;
+        border-radius: 0.5rem;
+      }
+    }
     li {
       display: flex;
       gap: 1rem;
