@@ -3,7 +3,7 @@ import styled from "styled-components"
 export default function Login() {
   const handleClick = () => {
     const clientId = "160368485e05486f9e10b1ce62fd6616"
-    const redirectUrl = "http://localhost:3000/"
+    const redirectUrl = "http://localhost:3001/"
     const apiUrl = "https://accounts.spotify.com/authorize"
     const scope = [
       `user-read-email`,
